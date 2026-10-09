@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Online Communities · IGCSE ICT</title>
+  <meta name="description" content="Interactive lesson on online communities: social networking, online gaming, work spaces, VLEs, wikis and forums, user-generated content, global communication and staying safe online. A check after every section and a final test. Pearson Edexcel International GCSE ICT, Unit 3.">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="communities.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <div class="brand">
+        <span class="logo" role="img" aria-label="British School Alzira · Xàtiva · Gandia"></span>
+        <div class="titles">
+          <p class="kicker">IGCSE ICT · Unit 3 · Operating online</p>
+          <h1>Online Communities</h1>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button class="chip-btn" id="btnProjector" aria-pressed="false" title="Bigger text for the classroom projector (P)">Projector mode</button>
+        <button class="chip-btn" id="btnFull" title="Full screen (F)">Full screen</button>
+      </div>
+    </div>
+    <nav class="tabs" id="tabs" aria-label="Scenes"></nav>
+  </header>
+
+  <main>
+    <section class="lab" id="lab">
+      <div class="card stage-card">
+        <div class="stage-head">
+          <span class="scene-ic" id="sceneIc"></span>
+          <h2 id="sceneTitle"></h2>
+          <span class="try" id="tryBadge" hidden>Interactive · try it</span>
+        </div>
+        <div class="stage" id="stage"></div>
+      </div>
+
+      <aside class="side">
+        <div class="card narration" id="narration" aria-live="polite">
+          <p class="step-count" id="stepCount"></p>
+          <h3 id="stepTitle"></h3>
+          <div class="step-text" id="stepText"></div>
+          <p class="tip" id="stepTip" hidden></p>
+        </div>
+        <div class="card vocab" id="vocab" hidden>
+          <h4>Subject vocabulary</h4>
+          <dl id="vocabList"></dl>
+        </div>
+      </aside>
+    </section>
+
+    <section class="page" id="page" hidden></section>
+  </main>
+
+  <footer class="controls" id="controls">
+    <button class="btn ghost" id="btnReset" title="Restart this scene (R)">↺ <span>Restart</span></button>
+    <button class="btn ghost" id="btnBack" title="Back (←)">◀ <span>Back</span></button>
+    <button class="btn primary" id="btnPlay" title="Play / pause (Space)">▶ Play</button>
+    <button class="btn ghost" id="btnNext" title="Next (→)"><span>Next</span> ▶</button>
+    <label class="speed">Speed
+      <select id="speed">
+        <option value="0.5">0.5×</option>
+        <option value="1" selected>1×</option>
+        <option value="1.5">1.5×</option>
+        <option value="2">2×</option>
+      </select>
+    </label>
+    <div class="progress" aria-hidden="true"><div id="progressFill"></div></div>
+  </footer>
+
+  <script src="js/core.js"></script>
+  <script src="js/check.js"></script>
+  <script src="js/scenes/intro.js"></script>
+  <script src="js/scenes/social.js"></script>
+  <script src="js/scenes/gaming.js"></script>
+  <script src="js/scenes/work.js"></script>
+  <script src="js/scenes/vle.js"></script>
+  <script src="js/scenes/reference.js"></script>
+  <script src="js/scenes/ugc.js"></script>
+  <script src="js/scenes/global.js"></script>
+  <script src="js/scenes/safety.js"></script>
+  <script src="js/scenes/terms.js"></script>
+  <script src="js/scenes/final.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
