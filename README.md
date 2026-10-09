@@ -1,5 +1,7 @@
 # Online Communities — IGCSE ICT
 
+**Live:** https://online-communities-igcse.vercel.app
+
 Interactive lesson for Pearson Edexcel International GCSE ICT, Unit 3 Operating online, Chapter 8 Online communities.
 
 Each section is explained step by step with an interactive mock-up, then followed by a short **✓ Check** activity. The lesson ends with a **Final test** whose results students can copy (or download as .txt) and send to their teacher.
